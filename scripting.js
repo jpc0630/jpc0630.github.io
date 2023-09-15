@@ -33,7 +33,7 @@ function generateBlanks() {
         output1.textContent = koll;
     }
     // show location or not
-    if(false) {  // true if you want to show the location, false if not
+    if(true) {  // true if you want to show the location, false if not
         const locationSent = document.getElementById("locationInput").value;
         const output2 = document.getElementById("p2");
         output2.textContent = locationSent;
