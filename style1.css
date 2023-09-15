@@ -1,0 +1,26 @@
+body {
+    /*background-color:rgba(21,89,222,255);*/
+    background-image: url("Screenshot 2023-09-14 183449.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+}
+
+#OnestSectAns {
+    margin: auto;
+    padding: 5cm;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5cm;
+    line-height: 100px;
+}
+
+#others {
+    padding:10px;
+    font-weight: bold;
+    color:black;
+    background-color:antiquewhite;
+    border: 3px solid green;
+    font-size: 20px;
+}

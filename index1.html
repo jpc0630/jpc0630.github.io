@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head> 
+        <title> SKAP: Name that Sitas </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Insert commands here -->
+        
+            <div id="OnestSectAns">
+            <center><p id="p1"> </p></center>
+            <center><p id="p2"> </p></center>
+            <center><p id="p3"> </p></center>
+            <br>
+            <button type="button" onclick="showAnswer()"> Show Answer </button>
+            <button onclick="hideAnswer()"> Hide Answer </button>
+            </div>
+
+            <div id="OnestSect">
+                <h1 class="header"> Name that Sitas </h1>
+                <label for="translation"> Enter Bible translation here:</label>
+                <input type="text" id="translateInput" placeholder="(e.g. ANG DATING BIBLIA)">
+                <br><br>
+                <label for="location"> Enter sitas location here (if applicable):</label>
+                <input type="text" id="locationInput" placeholder="(e.g. Genesis 1:1)">
+                <br><br>
+                <label for="sentenceInput">Enter the sitas sentence:</label>
+                <input type="text" id="sentenceInput" placeholder="Enter your sentence">
+                <br><br>
+                <button onclick="hideAnswer()">Generate</button>
+                <br><br>
+            </div>
+        <script src="scripting1.js"> </script>
+
+        <p id="others">
+            Other segment links: <br>
+            <a href="index.html"> Sitas: Fill in the Blanks </a> 
+        </p>
+    </body>
+</html>

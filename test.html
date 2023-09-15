@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #333;
+            transition: left 0.3s;
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-left: 0;
+            transition: margin-left 0.3s;
+            padding: 15px;
+        }
+
+        .content.active {
+            margin-left: 250px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">&#10005;</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <button onclick="toggleSidebar()">Toggle Sidebar</button>
+        <p>This is the main content of the page.</p>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+            sidebar.classList.toggle('active');
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
