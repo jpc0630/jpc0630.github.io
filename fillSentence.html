@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head> 
+        <title> SKAP: Fill in the Blanks </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body> <!-- No number is allowed in front of the id or class names -->
+
+        <div id="OnestSectAns">
+        <center><p id="p1"> </p></center>
+        <center><p id="p2"> </p></center>
+        <center><p id="p3"> </p></center>
+        <br>
+        <button type="button" onclick="showAnswer()"> Show Answer </button>
+        <button onclick="generateBlanks()"> Hide Answer </button>
+        </div>
+        
+        <div>
+        <br><br><br><br>
+        </div>
+        
+        <div id="OnestSect">
+        <h1 class="header"> Sitas: Fill in the blanks </h1>
+        <label for="translation"> Enter Bible translation here:</label>
+        <input type="text" id="translateInput" placeholder="(e.g. ANG DATING BIBLIA)">
+        <br><br>
+        <label for="location"> Enter sitas location here (if applicable):</label>
+        <input type="text" id="locationInput" placeholder="(e.g. Genesis 1:1)">
+        <br><br>
+        <label for="sentenceInput">Enter the sitas sentence:</label>
+        <input type="text" id="sentenceInput" placeholder="Enter your sentence">
+        <br><br><br>
+        <label for="blankInput"> Enter words to blank (comma-separated):</label>
+        <input type="text" id="blankInput" placeholder="e.g., word1, word2">
+        <br><br>
+        <button onclick="generateBlanks()">Generate</button>
+        <br><br>
+        </div>
+                
+        <script src="scripting.js"></script>
+
+    <div>
+    <p id="others">
+        Other segment links: <br>
+        <a href="oneSentence.html"> Name that Sitas </a> 
+    </p>
+    </div>
+    </body>
+
+</html>
