@@ -2,7 +2,7 @@ function showAnswer(){
     const answer = document.getElementById("locationInput").value;
     const outputAns = document.getElementById("p2");
     outputAns.style.textDecoration = "underline";
-    outputAns.style.fontSize = "2cm";
+    outputAns.style.fontSize = "1.5cm";
     outputAns.textContent = answer;
 }
 
